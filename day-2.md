@@ -28,7 +28,8 @@ Algorith:
 2. Create a variable for the max profit starting at 0
 3. loop over the prices to find get your minimun price and max profit
 4. In the loop check if the price for the day is less than the minimun price and change the minimun price for that day if true
-5. 
+5. If the minimun price isn't being updated then check if the price for the day - the money already spent from the minimun day price is greater than the max profit. If true then update the max profit to your minimun price for that day.
+6. Return the max profit after we stop iterating over the prices.
 
 Python Solution:
 
